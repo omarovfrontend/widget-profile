@@ -14,7 +14,7 @@ body {
     background-size: cover;
 }
 
-.widget-profile {
+.wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,8 +58,8 @@ body {
 }
 
 .profile-description::before {
-    position: absolute;
     content: "";
+    position: absolute;
     top: -40%;
     left: 50%;
     transform: translateX(-50%);
@@ -67,13 +67,18 @@ body {
     height: 17px;
     background-image: url(../images/line.png);
     background-repeat: no-repeat;
-
 }
 
-.social {
+.social-list {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.social-twitter,
+.social-dribbble,
+.social-in {
+    background-repeat: no-repeat;
 }
 
 .social-twitter {
